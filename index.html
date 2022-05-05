@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body onclick>
+    <!-- хедер -->
+    <header class="work5-header">
+
+            <a class="work5-logo work5-header__work5-logo" href="#">
+                <img src="img/svg/logo.svg" alt="лого"/>
+            </a>
+            
+            <ul class="breadcrumbs work5-header__breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__list" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__list" href="#">Мои магазины</a>
+                </li>
+            </ul>
+            
+            <div class="user-block work5-header__user-block">
+
+                    <a href="#" class="user-block__message message">
+                        <i class="icon-envelope message__icon"></i>
+                        <span class="visually-hidden">сообщение</span>
+                    </a>
+
+                    <a href="#" class="user-name user-block__user-name">
+                        <picture class="user-name__img">
+                            <source type="image/webp" srcset="../img/webp/user.webp">
+                            <img src="../img/png/user.png" alt="фото"/>
+                        </picture>
+                        <span class="user-name__name">Максим Добжанский</span>
+                    </a>
+
+            </div>
+
+            <button class="burger work5-header__burger">
+                <span class="burger__elem"></span>
+                <span class="visually-hidden">кнопка меню</span>
+            </button>
+
+    </header>
+    <!-- Боковая панель -->
+    <aside class="work5-aside">
+
+        <div class="work5-aside__title-wrap">
+            <a class="work5-aside__logo work5-logo" href="#">
+                <img src="img/svg/logo.svg" alt="лого"/>
+            </a>
+            <button class="asid-close">
+                <i class=" icon-cancel-1"></i>
+                <span class="visually-hidden">закрыть</span>
+            </button>
+        </div>
+
+        <nav class="navigation-menu work5-aside__navigation-menu">
+            <ul class="navigation-menu__list">
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-web-page-home"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Главная</a>
+                </li>
+                <li class="navigation-menu__item navigation-menu__item--active">
+                    <i class="navigation-menu__icon icon-shopping-cart"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Мои магазины</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-webpage"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Промоматериалы</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-piee"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Статистика</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-megaphone"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Баланс</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-piechart"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Персональные данные</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-wallet"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>FAQ</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-music"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Техподдержка</a>
+                </li>
+                <li class="navigation-menu__item">
+                    <i class="navigation-menu__icon icon-logout"></i>
+                    <a class="navigation-menu__link" href="#"><i></i>Выход</a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main>
+        <!-- Главная -->
+        <section class="work5-main">
+
+            <button class="new-magzine work5-main__new-magzine">
+                <i class="new-magzine__icon icon-plus"></i>
+                <span class="new-magzine__text">Создать свой магазин</span>
+            </button>
+
+            <h2 class="work5-main__title">Управление магазинами</h2>
+
+            <table class="work5-main__work5-table work5-table">
+                <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Название</th>
+                        <th scope="col">Адрес</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">12345</td>
+                        <td>Дипломная работа</td>
+                        <td>
+                            <a href="http://www.work5.ru/services">http://www.work5.ru/services</a>
+                        </td>
+                        <td>
+                            <button class="table-btn table-btn__edit">
+                                <i class="table-btn__icon icon-pencil-1 "></i>
+                                <span class="table-btn__text">Редактировать</span>
+                            </button>
+                            <button class="table-btn table-btn__delet">
+                                <i class="table-btn__icon icon-cancel-1"></i>
+                                <span class="table-btn__text">Удалить</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12345</td>
+                        <td>Дипломная работа</td>
+                        <td>
+                            <a href="http://www.work5.ru/services">http://www.work5.ru/services</a>
+                        </td>
+                        <td>
+                            <button class="table-btn table-btn__edit">
+                                <i class="table-btn__icon icon-pencil-1 "></i>
+                                <span class="table-btn__text">Редактировать</span>
+                            </button>
+                            <button class="table-btn table-btn__delet">
+                                <i class="table-btn__icon icon-cancel-1"></i>
+                                <span class="table-btn__text">Удалить</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">12345</td>
+                        <td>Дипломная работа</td>
+                        <td>
+                            <a href="http://www.work5.ru/services">http://www.work5.ru/services</a>
+                        </td>
+                        <td>
+                            <button class="table-btn table-btn__edit">
+                                <i class="table-btn__icon icon-pencil-1 "></i>
+                                <span class="table-btn__text">Редактировать</span>
+                            </button>
+                            <button class="table-btn table-btn__delet">
+                                <i class="table-btn__icon icon-cancel-1"></i>
+                                <span class="table-btn__text">Удалить</span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+    <!-- попап -->
+    <section class="work5-popup">
+
+        <form class="work5-popup__work5-form work5-form" action="#" method="POST" enctype="multipart/form-data" onsubmit="return false;">
+            <div class="wrap-title work5-form__wrap-title">
+                <h2 class="wrap-title__title">Создать магазин</h2>
+                <button class="wrap-title__close">
+                    <i class="icon-cancel-1"></i>
+                    <span class="visually-hidden">закрыть</span>
+                </button>
+            </div>
+
+            <div class="wrap-block work5-form__wrap-block">
+                <label>
+                    <span>Шаблон</span>
+                    <select class="form-select">
+                        <option value="1" selected>Стандартный</option>
+                        <option value="2">Продвинутый</option>
+                        <option value="">Премиум</option>
+                    </select>
+                </label>
+
+                <label>
+                    <span>Цветовая схема</span>
+                    <select class="form-select">
+                        <option selected>Классическая</option>
+                        <option>Темная</option>
+                        <option>Яркая</option>
+                    </select>
+                </label>
+            </div>
+
+            <label class="domin work5-form__domin">
+                <span class="domin__title">Домен</span>
+                <div class="input-group domin__wrap">
+                    <input class="domin__input" placeholder="Например: ivangrozniy" type="text" required="required">
+                    <span class="domin__text input-group-text">.work5.ru</span>
+                </div>
+            </label>
+
+            <div class="wrap-warning work5-form__wrap-warning">
+                <i class="wrap-warning__icon icon-warning"></i>
+                <p class="wrap-warning__text">В названии домена разрешены латиница и &#8220;&#8210;&#8221;, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрктить свой домен (например ivangrozniy.ru). подробности по <a href="#">ссылке</a></p>
+            </div>
+                
+            <div class="work5-form__wrap-btn wrap-btn">
+                <button class="wrap-btn__cancel wrap-btn__btn">Отмена</button>
+                <input class="wrap-btn__create wrap-btn__btn" type="submit" value="Создать">
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.burger').forEach(function(tabsBtn) {
+                tabsBtn.addEventListener('click', function() {
+
+                    let on = document.querySelector('.work5-aside')
+                    on.classList.add('work5-aside--on')
+
+            })
+        })
+
+        document.querySelectorAll('.asid-close').forEach(function(tabsBtn) {
+                tabsBtn.addEventListener('click', function() {
+
+                    let on = document.querySelector('.work5-aside')
+                    on.classList.remove('work5-aside--on')
+
+            })
+        })
+
+        document.querySelectorAll('.new-magzine').forEach(function(tabsBtn) {
+                tabsBtn.addEventListener('click', function() {
+
+                    let on = document.querySelector('.work5-popup')
+                    on.classList.add('work5-popup--on')
+
+            })
+        })
+        
+        document.querySelectorAll('.wrap-title__close').forEach(function(tabsBtn) {
+                tabsBtn.addEventListener('click', function() {
+
+                    let on = document.querySelector('.work5-popup')
+                    on.classList.remove('work5-popup--on')
+
+            })
+        })
+        document.querySelectorAll('.wrap-btn__cancel').forEach(function(tabsBtn) {
+                tabsBtn.addEventListener('click', function() {
+
+                    let on = document.querySelector('.work5-popup')
+                    on.classList.remove('work5-popup--on')
+
+            })
+        })
+    })
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
